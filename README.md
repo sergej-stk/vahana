@@ -9,7 +9,7 @@
   <p align="center">
     A ride-sharing API for connecting drivers and passengers.
     <br />
-    <a href="https://github.com/sergej-stk/vahana"><strong>Explore the docs »</strong></a>
+    <a href="https://sergej-stk.github.io/vahana/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/sergej-stk/vahana">View Demo</a>
