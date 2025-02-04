@@ -14,9 +14,9 @@
     <br />
     <a href="https://github.com/sergej-stk/vahana">View Demo</a>
     &middot;
-    <a href="https://github.com/sergej-stk/vahana">Report Bug</a>
+    <a href="https://github.com/sergej-stk/vahana/issues/new?template=bugreport.md">Report Bug</a>
     &middot;
-    <a href="https://github.com/sergej-stk/vahana">Request Feature</a>
+    <a href="https://github.com/sergej-stk/vahana/issues/new?template=featurerequest.md">Request Feature</a>
   </p>
 </div>
 
