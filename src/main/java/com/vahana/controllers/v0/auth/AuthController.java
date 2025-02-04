@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Tag(name = "Authentication Endpoint", description = "Endpoints for user registration and authentication.")
 @RestController
-@RequestMapping("/v0/auth")
+@RequestMapping("/vahana/v0/auth")
 public class AuthController {
 
     @Operation(
