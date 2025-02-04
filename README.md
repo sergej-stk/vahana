@@ -9,7 +9,7 @@
   <p align="center">
     A ride-sharing API for connecting drivers and passengers.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/sergej-stk/vahana"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/sergej-stk/vahana">View Demo</a>
@@ -19,3 +19,25 @@
     <a href="https://github.com/sergej-stk/vahana">Request Feature</a>
   </p>
 </div>
+
+<details>
+  <summary>
+    Structure
+  </summary>
+
+  ````
+  com/
+  ├── vahana/
+  │   ├── controllers/  
+  │   │   ├── v0/
+  │   │   │   └── auth/
+  │   │   └── v1/
+  │   ├── services/
+  │   ├── repositories/ 
+  │   ├── models/    
+  │   ├── VahanaApplication.java  
+  │   │
+  │   ├── tests/
+  └── └── VahanaApplicationTests.java     
+  ````
+</details>
