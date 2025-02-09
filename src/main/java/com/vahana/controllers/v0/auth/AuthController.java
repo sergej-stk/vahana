@@ -1,5 +1,6 @@
 package com.vahana.controllers.v0.auth;
 
+import com.vahana.models.v0.users.UserModel;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -46,7 +47,7 @@ public class AuthController {
             }
     )
     @PostMapping("/login")
-    public ResponseEntity<String> logIn() {
+    public ResponseEntity<String> logIn(@RequestBody UserModel user     ) {
         return ResponseEntity.ok("Successfully logged in");
     }
 }
