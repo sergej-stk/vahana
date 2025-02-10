@@ -53,14 +53,14 @@ public class UserEntity {
     @Schema(
             name = "phonenumber",
             nullable = true,
-            description = "The user's phone number. Valid formats include:\n" +
-                    "+49 170 1234567\n" +
-                    "+1-800-123 4567\n" +
-                    "(+44) 20 7946 0958\n" +
-                    "+33 1 70 12 34 56\n" +
-                    "+49-40-123 4567\n" +
-                    "(+1) 123 456 7890\n" +
-                    "+41 (0) 44 567 8901",
+            description = "The user's phone number. Valid formats include:<ul>" +
+                    "<li>+49 170 1234567</li>" +
+                    "<li>+1-800-123 4567</li>" +
+                    "<li>(+44) 20 7946 0958</li>" +
+                    "<li>+33 1 70 12 34 56</li>" +
+                    "<li>+49-40-123 4567</li>" +
+                    "<li>(+1) 123 456 7890</li>" +
+                    "<li>+41 (0) 44 567 8901</li></ul>",
             example = "+49 170 1234567"
     )
     @Pattern(regexp = RegexConstants.PHONE_NUMBER_REGEX)
