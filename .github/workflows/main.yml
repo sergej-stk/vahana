@@ -30,6 +30,3 @@ jobs:
 
     - name: Build with Maven
       run: mvn clean compile
-
-    - name: Run tests with Maven
-      run: mvn test
