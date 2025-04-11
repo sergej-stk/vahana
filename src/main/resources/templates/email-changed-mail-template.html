@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vahana - E-Mail Adressänderung</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background-color: #5a3b18;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        .info-box {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #5a3b18;
+        }
+
+        .footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+        }
+
+        .warning {
+            color: #cc0000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<center class="wrapper">
+    <div class="container">
+        <div class="header">
+
+        </div>
+
+        <div class="content">
+            <h1 style="color: #5a3b18; margin-top: 0;">E-Mail Adressänderung</h1>
+
+            <p th:text="'Hallo ' + ${username} + ','"></p>
+
+            <p>Wir haben eine Anfrage erhalten, die E-Mail-Adresse Ihres Vahana-Kontos zu ändern.</p>
+
+            <div class="info-box">
+                <p><strong>Neue E-Mail-Adresse:</strong> <span th:text="${email}"></span></p>
+            </div>
+
+            <p>Wenn Sie diese Änderung angefordert haben:</p>
+            <ul>
+                <li>Ist keine weitere Aktion erforderlich</li>
+                <li>Alle zukünftigen Mitteilungen werden an die neue E-Mail-Adresse gesendet</li>
+            </ul>
+
+            <p class="warning">Wenn Sie diese Änderung NICHT angefordert haben:</p>
+            <ul class="warning">
+                <li>Kontaktieren Sie umgehend unseren Support</li>
+                <li>Ändern Sie Ihr Passwort, um Ihr Konto zu schützen</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Vahana Team</p>
+            <p>Kontakt: support@vahana.de</p>
+            <p>© 2024 Vahana. Alle Rechte vorbehalten.</p>
+            <p style="margin-top: 10px;">
+                <a href="http://domain.com/imprint" style="color: #5a3b18;">Impressum</a> |
+                <a href="http://domain.com/data-protection" style="color: #5a3b18;">Datenschutz</a>
+            </p>
+        </div>
+    </div>
+</center>
+
+<!-- Fallback Text für Clients ohne HTML-Support -->
+<div style="display: none;">
+    Hallo [[${username}]],
+
+    Wir haben eine Anfrage erhalten, die E-Mail-Adresse Ihres BananaSplit-Kontos zu ändern.
+
+    Neue E-Mail-Adresse: [[${email}]]
+
+    Wenn Sie diese Änderung angefordert haben, ist keine weitere Aktion erforderlich.
+    Wenn Sie diese Änderung NICHT angefordert haben, kontaktieren Sie bitte umgehend unseren Support.
+
+    [[${footer}]]
+</div>
+</body>
+</html>
